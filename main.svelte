@@ -12,6 +12,20 @@ const mod = {
 
 	_ValueOLSKInstallAlertVisible: DebugFakeAlertVisible,
 
+	// INTERFACE
+
+	InterfaceDismissButtonDidClick () {
+		mod.ControlDismiss();
+	},
+
+	// CONTROL
+
+	ControlDismiss () {
+		window.localStorage.setItem(OLSKInstallLogic.OLSKInstallDismissPreferenceKey(), true);
+
+		mod._ValueOLSKInstallAlertVisible = false;
+	},
+
 	// LIFECYCLE
 
 	LifecycleModuleDidLoad() {
@@ -34,6 +48,9 @@ import OLSKUIAssets from 'OLSKUIAssets';
 
 <span class="OLSKInstallAlertHeading">{ OLSKLocalized('OLSKInstallAlertHeadingText') }</span>
 <p class="OLSKInstallAlertBlurb">{@html OLSKFormatted(OLSKLocalized('OLSKInstallAlertBlurbHTMLFormat'), OLSKUIAssets._OLSKSharediOSShare, OLSKUIAssets._OLSKSharediOSA2HS) }</p>
+<button class="OLSKInstallAlertDismissButton OLSKDecorButtonNoStyle OLSKDecorTappable" title={ OLSKLocalized('OLSKInstallAlertDismissButtonText') } on:click={ mod.InterfaceDismissButtonDidClick }>
+	<div class="OLSKInstallAlertDismissButtonImage">{@html OLSKUIAssets._OLSKSharedDiscard }</div>
+</button>
 
 </div>
 {/if}

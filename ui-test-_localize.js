@@ -31,6 +31,10 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		it('localizes OLSKInstallAlertBlurb', function () {
 			browser.assert.OLSKInnerHTML(OLSKInstallAlertBlurb, OLSKTestingFormatted(uLocalized('OLSKInstallAlertBlurbHTMLFormat'), uFile('_OLSKSharediOSShare'), uFile('_OLSKSharediOSA2HS')));
 		});
+
+		it('localizes OLSKInstallAlertDismissButton', function () {
+			browser.assert.attribute(OLSKInstallAlertDismissButton, 'title', uLocalized('OLSKInstallAlertDismissButtonText'));
+		});
 	
 	});
 

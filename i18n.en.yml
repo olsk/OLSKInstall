@@ -1,2 +1,3 @@
 OLSKInstallAlertHeadingText: Install on your device
 OLSKInstallAlertBlurbHTMLFormat: 'Tap <em>Share</em> %$1@, then <em>Add to Home Screen</em> %$2@'
+OLSKInstallAlertDismissButtonText: Dismiss

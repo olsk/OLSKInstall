@@ -4,21 +4,20 @@ export let DebugFakeAlertVisible = false;
 import { OLSKLocalized } from 'OLSKInternational';
 import { OLSKFormatted } from 'OLSKString';
 
+import OLSKInstallLogic from './main.js';
+
 const mod = {
 
 	// VALUE
 
-	_ValueUpdateAlertIsVisible: DebugFakeAlertVisible,
-
-	// SETUP
-
-	SetupEverything() {
-	},
+	_ValueOLSKInstallAlertVisible: DebugFakeAlertVisible,
 
 	// LIFECYCLE
 
 	LifecycleModuleDidLoad() {
-		mod.SetupEverything();
+		OLSKInstallLogic.OLSKInstallSetup({
+			ParamMod: mod,
+		});
 	},
 
 };
@@ -30,7 +29,7 @@ import OLSKUIAssets from 'OLSKUIAssets';
 
 <div class="OLSKInstall">
 
-{#if mod._ValueUpdateAlertIsVisible }
+{#if mod._ValueOLSKInstallAlertVisible }
 <div class="OLSKInstallAlert">
 
 <span class="OLSKInstallAlertHeading">{ OLSKLocalized('OLSKInstallAlertHeadingText') }</span>

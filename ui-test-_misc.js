@@ -23,7 +23,7 @@ describe('OLSKInstall_Misc', function () {
 	describe('OLSKInstallAlertDismissButtonImage', function test_OLSKInstallAlertDismissButtonImage () {
 
 		it('sets src', function () {
-			browser.assert.elements(`${ OLSKInstallAlertDismissButtonImage } #_OLSKSharedDiscard`, 1);
+			browser.assert.elements(`${ OLSKInstallAlertDismissButtonImage } #_OLSKSharedDismiss`, 1);
 		});
 	
 	});

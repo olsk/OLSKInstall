@@ -1,4 +1,7 @@
 {
   "name": "OLSKInstall",
-  "main": "main.js"
+  "main": "main.js",
+  "dependencies": {
+    "OLSKUIAssets": "olsk/OLSKUIAssets"
+  }
 }

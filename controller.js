@@ -12,12 +12,6 @@ const mod = {
 		}];
 	},
 
-	OLSKControllerStaticAssetFiles () {
-		return [
-			'main.js',
-		];
-	},
-
 	OLSKControllerSharedStaticAssetFolders () {
 		return [
 			'node_modules',

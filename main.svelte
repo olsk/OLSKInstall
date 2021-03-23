@@ -4,7 +4,7 @@ export let DebugFakeAlertVisible = false;
 import { OLSKLocalized } from 'OLSKInternational';
 import { OLSKFormatted } from 'OLSKString';
 
-import OLSKInstallLogic from './main.js';
+import OLSKInstallLogic from './ui-logic.js';
 
 const mod = {
 

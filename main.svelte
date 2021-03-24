@@ -70,7 +70,7 @@ import OLSKUIAssets from 'OLSKUIAssets';
 	border: var(--OLSKInstallAlertBorderWidth) solid #cccccc;
 
 	background: #e6e6e6;
-	color: var(--OLSKCommonForeground);
+	color: black;
 	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 
 	/* OLSKInstallAlertFlexbox:Parent */

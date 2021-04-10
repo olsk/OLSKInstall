@@ -64,6 +64,7 @@ import OLSKUIAssets from 'OLSKUIAssets';
 
 <style type="text/css">
 .OLSKInstallAlert {
+	--OLSKCommonForeground: black;
 	--OLSKInstallAlertBorderWidth: 1.5px;
 
 	padding: 10px;

@@ -6,7 +6,7 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		return OLSKTestingLocalized(inputData, OLSKRoutingLanguage);
 	};
 
-	describe(`OLSKInstall_Localize-${ OLSKRoutingLanguage }`, function () {
+	describe('OLSKInstall_Localize-' + OLSKRoutingLanguage, function () {
 
 		const uFile = function (inputData) {
 			return require('OLSKString').OLSKStringReplaceTokens(require('fs').readFileSync(`./node_modules/OLSKUIAssets/${ inputData }.svg`, 'utf8'), {

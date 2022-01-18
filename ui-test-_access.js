@@ -9,7 +9,7 @@ Object.entries({
 	OLSKInstallAlertDismissButton: '.OLSKInstallAlertDismissButton',
 	OLSKInstallAlertDismissButtonImage: '.OLSKInstallAlertDismissButtonImage',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('OLSKInstall_Access', function () {

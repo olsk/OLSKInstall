@@ -11,11 +11,11 @@ describe('OLSKInstall_Misc', function () {
 	describe('OLSKInstallAlertDismissButton', function test_OLSKInstallAlertDismissButton () {
 
 		it('classes OLSKDecorButtonNoStyle', function () {
-			browser.assert.hasClass(OLSKInstallAlertDismissButton, 'OLSKDecorButtonNoStyle');
+			return browser.assert.hasClass(OLSKInstallAlertDismissButton, 'OLSKDecorButtonNoStyle');
 		});
 
 		it('classes OLSKDecorTappable', function () {
-			browser.assert.hasClass(OLSKInstallAlertDismissButton, 'OLSKDecorTappable');
+			return browser.assert.hasClass(OLSKInstallAlertDismissButton, 'OLSKDecorTappable');
 		});
 
 	});
@@ -23,7 +23,7 @@ describe('OLSKInstall_Misc', function () {
 	describe('OLSKInstallAlertDismissButtonImage', function test_OLSKInstallAlertDismissButtonImage () {
 
 		it('sets src', function () {
-			browser.assert.elements(`${ OLSKInstallAlertDismissButtonImage } #_OLSKSharedDismiss`, 1);
+			return browser.assert.elements(`${ OLSKInstallAlertDismissButtonImage } #_OLSKSharedDismiss`, 1);
 		});
 	
 	});

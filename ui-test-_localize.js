@@ -25,15 +25,15 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		});
 
 		it('localizes OLSKInstallAlertHeading', function () {
-			browser.assert.text(OLSKInstallAlertHeading, uLocalized('OLSKInstallAlertHeadingText'));
+			return browser.assert.text(OLSKInstallAlertHeading, uLocalized('OLSKInstallAlertHeadingText'));
 		});
 
 		it('localizes OLSKInstallAlertBlurb', function () {
-			browser.assert.OLSKInnerHTML(OLSKInstallAlertBlurb, OLSKTestingFormatted(uLocalized('OLSKInstallAlertBlurbHTMLFormat'), uFile('_OLSKSharediOSShare'), uFile('_OLSKSharediOSA2HS')));
+			return browser.assert.OLSKInnerHTML(OLSKInstallAlertBlurb, OLSKTestingFormatted(uLocalized('OLSKInstallAlertBlurbHTMLFormat'), uFile('_OLSKSharediOSShare'), uFile('_OLSKSharediOSA2HS')));
 		});
 
 		it('localizes OLSKInstallAlertDismissButton', function () {
-			browser.assert.attribute(OLSKInstallAlertDismissButton, 'title', uLocalized('OLSKInstallAlertDismissButtonText'));
+			return browser.assert.attribute(OLSKInstallAlertDismissButton, 'title', uLocalized('OLSKInstallAlertDismissButtonText'));
 		});
 	
 	});
